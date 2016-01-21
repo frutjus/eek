@@ -1,0 +1,8 @@
+{
+  "0" : {
+    "name" : "default_tech",
+    "description" : "default_description",
+    "effects" : [],
+    "prereqs" : []
+  }
+}
