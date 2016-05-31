@@ -13,5 +13,5 @@ class TechType
 	string description
 	public:
 	TechType();
-	TechType(int id); //instatiates from resource file
+	TechType(int id); //instantiates from resource file
 };

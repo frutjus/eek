@@ -1,12 +1,16 @@
 #pragma once
 
-#include "../game/game.h"
-
 #include <SDL2/SDL.h>
+
+using namespace std;
+
+#include "../game/game.h"
+#include "../game/input.h"
 
 class Interface
 {
-	Game game;
+	Game* game;
+	Input input;
 	
 	public:
 	Interface(Game &);
@@ -17,7 +21,7 @@ class Interface
 
 Interface::Interface(Game &g)
 {
-	game = g;
+	game = &g;
 }
 
 Interface::~Interface()
@@ -32,5 +36,5 @@ void Interface::display()
 
 void Interface::getInput()
 {
-	
+	game.record_input(input);
 }
